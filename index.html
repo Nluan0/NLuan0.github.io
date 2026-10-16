@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Natã Luan | Dados & Desenvolvimento</title>
+<title>Natã Luan | Engenharia de Dados</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')</script>
 <style>
-:root{--bg:#f5f5fa;--sf:#fff;--ln:#dcdfec;--tx:#14172a;--mu:#5a6078;--ac:#5b3df0;--a2:#ece8ff;--on:#fff;--ok:#15803d;--pr:#b45309;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#090b12;--sf:#10131e;--ln:#222839;--tx:#eef0f8;--mu:#9aa1b8;--ac:#8b6cff;--a2:#1c1838;--on:#0a0c14;--ok:#4ade80;--pr:#fbbf24;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#090b12;--sf:#10131e;--ln:#222839;--tx:#eef0f8;--mu:#9aa1b8;--ac:#8b6cff;--a2:#1c1838;--on:#0a0c14;--ok:#4ade80;--pr:#fbbf24;color-scheme:dark}
+:root{--bg:#f6f7f9;--sf:#fff;--ln:#dcdfe5;--tx:#0a0a0a;--mu:#5c6068;--ac:#1d4ed8;--a2:#e6eeff;--on:#fff;--ok:#0a0a0a;--pr:#1e3a8a;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--sf:#141414;--ln:#2b2b2b;--tx:#f5f5f5;--mu:#a1a1a1;--ac:#4d8dff;--a2:#0c1a33;--on:#0a0a0a;--ok:#f5f5f5;--pr:#9cc2ff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a0a0a;--sf:#141414;--ln:#2b2b2b;--tx:#f5f5f5;--mu:#a1a1a1;--ac:#4d8dff;--a2:#0c1a33;--on:#0a0a0a;--ok:#f5f5f5;--pr:#9cc2ff;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
 body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
@@ -23,7 +23,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .bg i b{position:absolute;inset:0;border-radius:50%;background:var(--ac);filter:blur(100px);opacity:.3;animation:fl 16s ease-in-out infinite alternate}
 .bg i:nth-child(1){left:-160px;top:2%;transform:translate3d(calc(var(--p,0)*340px),calc(var(--p,0)*560px),0)}
 .bg i:nth-child(2){right:-160px;top:40%;transform:translate3d(calc(var(--p,0)*-360px),calc(var(--p,0)*-380px),0)}
-.bg i:nth-child(2) b{background:#38bdf8;opacity:.22;animation-delay:-6s}
+.bg i:nth-child(2) b{background:#ffffff;opacity:.07;animation-delay:-6s}
 .bg i:nth-child(3){left:30%;top:72%;width:360px;height:360px;transform:translate3d(calc(var(--p,0)*-220px),calc(var(--p,0)*-520px),0)}
 @keyframes fl{to{transform:translate3d(60px,-50px,0) scale(1.15)}}
 @keyframes pu{50%{box-shadow:0 0 0 9px transparent}}
@@ -75,6 +75,7 @@ h3{margin:0;letter-spacing:-.03em;line-height:1.15}
 .tile{width:68px;height:68px;border-radius:20px;background:var(--a2);display:grid;place-items:center;font-size:1.8rem;flex:none}
 .pj h3{font-size:1.8rem;margin-top:6px}
 .pj p{margin:0;color:var(--mu)}
+.pj.wide{grid-column:1/-1}
 .mt{display:flex;flex-wrap:wrap;gap:6px 14px}
 .lk{margin-top:auto;padding:0;border:0;background:none;color:var(--ac);font:700 1.05rem "Space Grotesk",sans-serif;cursor:pointer;text-decoration:none}
 .gt{font-size:1.5rem;margin-bottom:18px}
@@ -91,6 +92,8 @@ h3{margin:0;letter-spacing:-.03em;line-height:1.15}
 .cl{list-style:none;margin:0 0 22px;padding:0}
 .cl li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--ln)}
 .cl li::before{content:"✓";flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--a2);color:var(--ok);font-weight:700;font-size:.85rem}
+.cl div{min-width:0}
+.cl em{display:block;margin-top:2px;font:400 .82rem "JetBrains Mono",ui-monospace,monospace;font-style:normal;color:var(--mu)}
 .cn{background:linear-gradient(160deg,var(--a2),var(--sf) 55%)}
 .rw{display:flex;align-items:center;gap:16px;margin-top:16px;padding:18px 20px;border:1px solid var(--ln);background:var(--sf);border-radius:18px;color:var(--tx);text-decoration:none;word-break:break-all}
 .rw:hover{border-color:var(--ac)}
@@ -134,10 +137,10 @@ dialog ul{margin:0;padding-left:20px;color:var(--mu)}
 <main id="top">
 <div class="w hero">
 <div>
-<div class="pill"><b></b><span data-en="Open to internships in data and development">Disponível para estágio em dados e desenvolvimento</span></div>
-<p class="ey" style="margin:26px 0 14px">Dados • Python • SQL</p>
+<div class="pill"><b></b><span data-en="Open to data engineering internships">Disponível para estágio em engenharia de dados</span></div>
+<p class="ey" style="margin:26px 0 14px">Engenharia de Dados • SQL • Python</p>
 <h1>Natã Luan<span>Rodrigues dos Santos</span></h1>
-<p class="ld" data-en="Systems Analysis and Development student. I use Python, SQL and Java/JavaScript to automate processes and turn data into answers.">Estudante de Análise e Desenvolvimento de Sistemas. Uso Python, SQL e Java/JavaScript para automatizar processos e transformar dados em respostas.</p>
+<p class="ld" data-en="Systems Analysis and Development student focused on data engineering. I use SQL, Python and BigQuery to organize and automate the path of data.">Estudante de Análise e Desenvolvimento de Sistemas, focado em engenharia de dados. Uso SQL, Python e BigQuery para organizar e automatizar o caminho dos dados.</p>
 <div class="cta">
 <a class="b pr" href="#projetos" data-en="See projects">Ver projetos</a>
 <a class="b" href="#certificados" data-en="Certificates">Certificados</a>
@@ -155,21 +158,21 @@ dialog ul{margin:0;padding-left:20px;color:var(--mu)}
   <span class="p">role</span>: <span class="s">"Estudante de ADS"</span>,
   <span class="p">stack</span>: [
     <span class="s">"Python"</span>, <span class="s">"SQL"</span>,
-    <span class="s">"Java"</span>, <span class="s">"JavaScript"</span>
+    <span class="s">"BigQuery"</span>, <span class="s">"Git"</span>
   ],
-  <span class="p">foco</span>: <span class="s">"Dados e código"</span>,
+  <span class="p">foco</span>: <span class="s">"Engenharia de dados"</span>,
   <span class="p">disponivel</span>: <span class="k">true</span>
 };</pre></div>
 </div>
 
 <section class="w" id="sobre">
 <div class="rv"><p class="ey"><em>01</em> <span data-en="About me">Sobre mim</span></p>
-<h2 data-en="Data and code applied to real problems.">Dados e código aplicados a problemas reais.</h2></div>
+<h2 data-en="Reliable data, ready to use.">Dados confiáveis, prontos para usar.</h2></div>
 <div class="tx rv">
-<p data-en="I'm a Systems Analysis and Development student and I like turning everyday problems into code. My focus is data and development, with Python, SQL, Java and JavaScript.">Sou estudante de Análise e Desenvolvimento de Sistemas e gosto de transformar problemas do dia a dia em código. Meu foco é dados e desenvolvimento, com Python, SQL, Java e JavaScript.</p>
-<p data-en="I learn by building: games, automations and web pages. I use AI to speed up projects, but I review and understand every part of what I deliver.">Aprendo construindo: jogos, automações e páginas web. Uso IA para acelerar os projetos, mas reviso e entendo cada parte do que entrego.</p>
-<p data-en="I'm looking for an internship to apply what I study and keep growing with a team.">Estou buscando um estágio para aplicar o que estudo e continuar evoluindo em equipe.</p>
-<div class="ch"><span>Python</span><span>SQL</span><span>Java</span><span>JavaScript</span><span>Git</span></div>
+<p data-en="I'm a Systems Analysis and Development student and I want to grow in data engineering. I like organizing, querying and automating the path of data, from source to report.">Sou estudante de Análise e Desenvolvimento de Sistemas e quero seguir em engenharia de dados. Gosto de organizar, consultar e automatizar o caminho dos dados, da origem até o relatório.</p>
+<p data-en="I work with SQL, Python and BigQuery. I use AI to speed up projects, but I review and understand every part of what I deliver.">Trabalho com SQL, Python e BigQuery. Uso IA para acelerar os projetos, mas reviso e entendo cada parte do que entrego.</p>
+<p data-en="I'm looking for a data engineering opportunity to keep learning with a team.">Estou buscando uma oportunidade em engenharia de dados para continuar aprendendo em equipe.</p>
+<div class="ch"><span>Python</span><span>SQL</span><span>BigQuery</span><span>Git</span><span>Automação</span></div>
 </div>
 </section>
 
@@ -181,7 +184,7 @@ dialog ul{margin:0;padding-left:20px;color:var(--mu)}
 <h3 style="font-size:1.7rem" data-en="Data Analyst">Analista de Dados</h3>
 <span class="pl" style="display:inline-block;margin:14px 0 18px" data-en="Nov 2025 — Nov 2026">nov 2025 — nov 2026</span>
 <ul class="cl">
-<li data-en="SQL queries on BigQuery to analyze retail sales.">Consultas em SQL no BigQuery para analisar vendas do varejo.</li>
+<li data-en="SQL queries on BigQuery to extract and organize retail sales data.">Consultas em SQL no BigQuery para extrair e organizar dados de vendas do varejo.</li>
 <li data-en="Built dashboards to track results (Qlik Sense and Streamlit).">Criei dashboards para acompanhar resultados (Qlik Sense e Streamlit).</li>
 <li data-en="Automated scheduled PDF reports.">Automatizei relatórios em PDF com envio agendado.</li>
 </ul>
@@ -195,19 +198,27 @@ dialog ul{margin:0;padding-left:20px;color:var(--mu)}
 <div class="g2">
 <article class="cd pj rv">
 <div class="top"><span class="pl" data-en="Featured">Destaque</span><a class="b" href="https://github.com/Nluan0" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#gh"/></svg></a></div>
-<div class="tile">🎮</div>
-<h3>Mario Jump</h3>
-<p data-en="Jump game with a score counter, progressive difficulty and mobile support.">Jogo de pulo com placar, dificuldade progressiva e suporte a celular.</p>
-<div class="mt"><span data-en="Game">Jogo</span><span data-en="Score">Placar</span><span>Mobile</span></div>
+<div class="tile">⚙️</div>
+<h3 data-en="Financial automation">Automação financeira</h3>
+<p data-en="Python script that collects financial data automatically and sends it to a Google Sheets spreadsheet.">Script em Python que coleta dados financeiros automaticamente e os envia para uma planilha do Google Sheets.</p>
+<div class="mt"><span>Python</span><span>Selenium</span><span>Google Sheets</span></div>
 <button class="lk" data-cs data-en="See case study →">Ver estudo de caso →</button>
 </article>
 <article class="cd pj rv">
-<div class="top"><span class="pl" data-en="Web">Web</span><a class="b" href="https://github.com/Nluan0" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#gh"/></svg></a></div>
-<div class="tile">🔗</div>
-<h3 data-en="Personal link page">Página pessoal de links</h3>
-<p data-en="Linktree-style page built from scratch and deployed online, gathering my profiles and contacts.">Página estilo Linktree feita do zero e publicada online, reunindo meus perfis e contatos.</p>
-<div class="mt"><span>React</span><span>Vercel</span></div>
+<div class="top"><span class="pl" data-en="Game">Jogo</span><a class="b" href="https://github.com/Nluan0" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#gh"/></svg></a></div>
+<div class="tile">🎮</div>
+<h3>Mario Jump</h3>
+<p data-en="Jump game with a score counter, progressive difficulty and mobile support.">Jogo de pulo com placar, dificuldade progressiva e suporte a celular.</p>
+<div class="mt"><span data-en="Logic">Lógica</span><span data-en="Score">Placar</span><span>Mobile</span></div>
 <a class="lk" href="https://github.com/Nluan0" target="_blank" rel="noopener" data-en="View on GitHub →">Ver no GitHub →</a>
+</article>
+<article class="cd pj wide rv">
+<div class="top"><span class="pl" data-en="Extension project">Projeto de extensão</span><a class="b" href="https://github.com/Nluan0" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#gh"/></svg></a></div>
+<div class="tile">🚁</div>
+<h3>Flappy Drone</h3>
+<p data-en="Accessible Flappy Bird-style game in Java and JavaFX, built by a team at UNI SENAI as an extension project for an NGO. A drone flies between server racks.">Jogo acessível no estilo Flappy Bird, em Java e JavaFX, feito em equipe no UNI SENAI como projeto de extensão para uma ONG. Um drone voa entre racks de servidores.</p>
+<div class="mt"><span>Java</span><span>JavaFX</span><span>Maven</span><span data-en="Team">Equipe</span></div>
+<button class="lk" data-cs="cf" data-en="See case study →">Ver estudo de caso →</button>
 </article>
 </div>
 </section>
@@ -216,45 +227,75 @@ dialog ul{margin:0;padding-left:20px;color:var(--mu)}
 <div class="rv"><p class="ey"><em>04</em> Stack</p>
 <h2 data-en="Tools I use to build solutions.">Ferramentas que uso para construir soluções.</h2></div>
 <div class="rv"><p class="ey" data-en="Main stack">Stack principal</p><h3 class="gt" data-en="Technologies I use the most">Tecnologias que mais utilizo</h3>
-<div class="sg"><div class="sc"><i>Py</i>Python</div><div class="sc"><i>DB</i>SQL</div><div class="sc"><i>Jv</i>Java</div><div class="sc"><i>JS</i>JavaScript</div></div></div>
+<div class="sg"><div class="sc"><i>Py</i>Python</div><div class="sc"><i>DB</i>SQL</div><div class="sc"><i>Bq</i>BigQuery</div><div class="sc"><i>Gt</i>Git</div></div></div>
 <div class="rv"><p class="ey" data-en="Hands-on experience">Experiência prática</p><h3 class="gt" data-en="Technologies used in projects">Tecnologias usadas em projetos</h3>
-<div class="sg"><div class="sc"><i>Re</i>React</div><div class="sc"><i>Se</i>Selenium</div><div class="sc"><i>Gt</i>Git</div><div class="sc"><i>Sh</i>Sheets API</div></div></div>
+<div class="sg"><div class="sc"><i>Se</i>Selenium</div><div class="sc"><i>Sh</i>Sheets API</div><div class="sc"><i>Qk</i>Qlik Sense</div><div class="sc"><i>St</i>Streamlit</div></div></div>
 <div class="rv"><p class="ey" data-en="Knowledge">Conhecimentos</p><h3 class="gt" data-en="Technologies I've had contact with">Tecnologias com as quais já tive contato</h3>
-<div class="sg" style="margin:0"><div class="sc"><i>Ph</i>PHP</div><div class="sc"><i>Xl</i>Excel 365</div></div></div>
+<div class="sg" style="margin:0"><div class="sc"><i>Jv</i>Java</div><div class="sc"><i>JS</i>JavaScript</div><div class="sc"><i>Ph</i>PHP</div><div class="sc"><i>Xl</i>Excel 365</div></div></div>
 </section>
 
 <section class="w" id="formacao">
 <div class="rv"><p class="ey"><em>05</em> <span data-en="Education">Formação</span></p>
 <h2 data-en="My academic and technical base.">Minha base acadêmica e técnica.</h2></div>
 <div class="tl rv">
-<div class="ti"><div class="tile">🎓</div><div><small data-en="Degree">Graduação</small><h3 data-en="Systems Analysis and Development">Análise e Desenvolvimento de Sistemas</h3><p>UNI SENAI Vila Mariana</p><p data-en="In progress">Cursando</p></div></div>
-<div class="ti"><div class="tile">🛠</div><div><small data-en="Extra courses">Cursos complementares</small><h3>SENAI</h3><p data-en="Complementary courses">Cursos complementares</p></div></div>
-<div class="ti"><div class="tile">💻</div><div><small data-en="Online courses">Cursos online</small><h3>LinkedIn Learning</h3><p data-en="6 courses completed • 2026">6 cursos concluídos • 2026</p></div></div>
+<div class="ti"><div class="tile">🎓</div><div style="min-width:0"><small data-en="Degree">Graduação</small><h3 data-en="Systems Analysis and Development">Análise e Desenvolvimento de Sistemas</h3><p>UNI SENAI Vila Mariana</p><p data-en="Jul 2026 — Dec 2028 • In progress">jul 2026 — dez 2028 • Cursando</p><p style="margin-top:10px" data-en="Programming study group (Python and JavaScript) • Academic web development projects • Programming marathons and logic challenges • Power BI dashboards">Grupo de estudos em programação (Python e JavaScript) • Projetos acadêmicos de desenvolvimento web • Maratonas de programação e desafios de lógica • Dashboards com Power BI</p></div></div>
+<div class="ti"><div class="tile">💻</div><div style="min-width:0"><small data-en="Online courses">Cursos online</small><h3 data-en="LinkedIn Learning and Microsoft">LinkedIn Learning e Microsoft</h3><p data-en="17 certificates • Oct 2026">17 certificados • out 2026</p><a class="lk" style="display:inline-block;margin-top:8px" href="#certificados" data-en="See certificates →">Ver certificados →</a></div></div>
+<div class="ti"><div class="tile">☁️</div><div style="min-width:0"><small data-en="Online course">Curso online</small><h3>Fundamentals of Machine Learning and Artificial Intelligence (Português)</h3><p>AWS Training Online</p><p data-en="Aug 2026">ago 2026</p></div></div>
+<div class="ti"><div class="tile">🛠️</div><div style="min-width:0"><small data-en="Complementary courses">Cursos complementares</small><h3>SENAI São Paulo</h3><ul class="cl" style="margin:14px 0 0">
+<li><div>Microsoft Power BI<em data-en="May 2025 — Jun 2025">mai 2025 — jun 2025</em></div></li>
+<li><div>Design de Marca<em data-en="Apr 2025 — May 2025">abr 2025 — mai 2025</em></div></li>
+<li><div>Desenvolvimento de Páginas para Internet<em data-en="Mar 2025 — Apr 2025">mar 2025 — abr 2025</em></div></li>
+<li><div>Marketing Digital com Inteligência Artificial<em data-en="Mar 2025 — Apr 2025">mar 2025 — abr 2025</em></div></li>
+<li><div>Implantação de Serviços de Inteligência Artificial em Nuvem – Microsoft AI-900<em data-en="Feb 2025 — Mar 2025">fev 2025 — mar 2025</em></div></li>
+<li><div>Fundamentos de Ciência de Dados – Google Cloud<em data-en="Feb 2025">fev 2025</em></div></li>
+</ul></div></div>
+<div class="ti"><div class="tile">🏫</div><div style="min-width:0"><small data-en="Basic education">Formação básica</small><h3 data-en="High School">Ensino Médio</h3><p>Escola Estadual de 1º, 2º e 3º Grau Professora Maria da Glória Costa e Silva</p><p data-en="Feb 2021 — Mar 2023">fev 2021 — mar 2023</p></div></div>
 </div>
 </section>
 
 <section class="w" id="certificados">
 <div class="rv"><p class="ey"><em>06</em> <span data-en="Certificates">Certificados</span></p>
 <h2 data-en="Courses I completed beyond college.">Cursos que concluí além da faculdade.</h2></div>
-<div class="cd rv">
-<div class="ey" style="margin-bottom:18px">LinkedIn Learning</div>
-<ul class="cl">
-<li>Fundamentos de Programação (básico)</li>
-<li>Fundamentos de Programação (além do básico)</li>
-<li>Fundamentos para Desenvolvimento de Software (Microsoft/LinkedIn)</li>
+<p class="ld rv" data-en="17 certificates, all issued in October 2026 by LinkedIn Learning and Microsoft.">17 certificados, todos emitidos em outubro de 2026 pelo LinkedIn Learning e pela Microsoft.</p>
+<div class="g2">
+<div class="cd rv"><div class="ey" style="margin-bottom:18px" data-en="Data, SQL and statistics">Dados, SQL e estatística</div>
+<ul class="cl" style="margin:0">
+<li>Fundamentos da Ciência de Dados</li>
+<li>Fundamentos de Estatística: Parte 1</li>
+<li>Introdução à Ciência de Dados: Como Contar Histórias com Dados</li>
+<li>Introdução à Ciência de Dados: Conceitos Básicos</li>
 <li>Aprendendo Programação SQL</li>
-<li>Excel 365 Formação Básica</li>
-<li>Competências Essenciais para Carreira em Desenvolvimento de Software</li>
-</ul>
-<a class="lk" href="https://www.linkedin.com/in/nat%C3%A3-luan-rodrigues-dos-santos-072145306/details/certifications/" target="_blank" rel="noopener" data-en="See all on LinkedIn →">Ver todos no LinkedIn →</a>
+</ul></div>
+<div class="cd rv"><div class="ey" style="margin-bottom:18px" data-en="Programming and development">Programação e desenvolvimento</div>
+<ul class="cl" style="margin:0">
+<li>Fundamentos de Programação: Conceitos Básicos</li>
+<li>Fundamentos de Programação: Além dos Conceitos Básicos</li>
+<li>Fundamentos para Desenvolvimento de Software por Microsoft e LinkedIn</li>
+<li>Introdução às Competências Essenciais para a Carreira de Desenvolvimento de Software</li>
+</ul></div>
+<div class="cd rv"><div class="ey" style="margin-bottom:18px" data-en="Artificial intelligence">Inteligência artificial</div>
+<ul class="cl" style="margin:0">
+<li>Fundamentos para uma Carreira em IA Generativa por Microsoft e LinkedIn</li>
+<li>Introdução à Inteligência Artificial</li>
+<li>Descubra a Inteligência Artificial Generativa</li>
+<li>IA Generativa: A Evolução da Busca Online Inteligente</li>
+<li>Ética na Era da Inteligência Artificial Generativa</li>
+</ul></div>
+<div class="cd rv"><div class="ey" style="margin-bottom:18px" data-en="Microsoft tools">Ferramentas Microsoft</div>
+<ul class="cl" style="margin:0">
+<li>Excel 365: Formação Básica</li>
+<li>Primeiros Passos com o Microsoft 365 Copilot</li>
+<li>Otimize seu Trabalho com o Microsoft Copilot</li>
+</ul></div>
 </div>
+<a class="lk" style="display:inline-block;margin-top:28px" href="https://www.linkedin.com/in/nat%C3%A3-luan-rodrigues-dos-santos-072145306/details/certifications/" target="_blank" rel="noopener" data-en="See all on LinkedIn →">Ver todos no LinkedIn →</a>
 </section>
 
 <section class="w" id="contato">
 <div class="cd cn rv">
 <p class="ey" data-en="Contact">Contato</p>
-<h2 data-en="Looking for an intern? Let's talk.">Procurando estagiário? Vamos conversar.</h2>
-<p class="ld" data-en="I'm open to internships in data and development, and to roles where I can keep learning and delivering.">Estou aberto a estágios em dados e desenvolvimento e a posições em que eu possa continuar aprendendo e entregando.</p>
+<h2 data-en="Looking for a data intern? Let's talk.">Procurando estagiário de dados? Vamos conversar.</h2>
+<p class="ld" data-en="I'm open to data engineering internships and roles where I can keep learning and delivering.">Estou aberto a estágios em engenharia de dados e a posições em que eu possa continuar aprendendo e entregando.</p>
 <a class="rw" href="mailto:nataluan14@gmail.com"><svg class="ic"><use href="#ml"/></svg>nataluan14@gmail.com</a>
 <a class="rw" href="https://github.com/Nluan0" target="_blank" rel="noopener"><svg class="ic"><use href="#gh"/></svg>github.com/Nluan0</a>
 <a class="rw" href="https://www.linkedin.com/in/nat%C3%A3-luan-rodrigues-dos-santos-072145306" target="_blank" rel="noopener"><b>in</b>LinkedIn</a>
@@ -265,18 +306,35 @@ dialog ul{margin:0;padding-left:20px;color:var(--mu)}
 <footer><div class="w" style="padding:0">© 2026 Natã Luan Rodrigues dos Santos · São Paulo</div></footer>
 
 <dialog id="cs">
-<h3>Mario Jump</h3>
-<p data-en="Case study • Game">Estudo de caso • Jogo</p>
+<h3 data-en="Financial automation">Automação financeira</h3>
+<p data-en="Case study • Automation">Estudo de caso • Automação</p>
 <h4 data-en="What it is">O que é</h4>
-<p data-en="A jump game with a score counter, difficulty that rises as you play, and support for phones.">Um jogo de pulo com placar, dificuldade que aumenta conforme você joga e suporte a celular.</p>
-<h4 data-en="Challenges I handled">Desafios que resolvi</h4>
+<p data-en="A Python script that collects financial data on its own and sends it to Google Sheets.">Um script em Python que coleta dados financeiros sozinho e os envia para o Google Sheets.</p>
+<h4 data-en="Flow">Fluxo</h4>
 <ul>
-<li data-en="Debugged the collision system.">Depurei o sistema de colisão.</li>
-<li data-en="Fixed the match restart.">Corrigi o reinício da partida.</li>
-<li data-en="Made the game work with touch on phones.">Fiz o jogo funcionar com toque no celular.</li>
+<li data-en="Automatic collection with Selenium.">Coleta automática com Selenium.</li>
+<li data-en="Data sent to a Google Sheets spreadsheet.">Dados enviados para uma planilha do Google Sheets.</li>
 </ul>
 <h4 data-en="What it shows">O que demonstra</h4>
-<p data-en="Game logic, debugging, and care for people playing on mobile.">Lógica de jogo, depuração e cuidado com quem joga no celular.</p>
+<p data-en="Data collection automation and integration between systems.">Automação de coleta de dados e integração entre sistemas.</p>
+<div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap"><a class="b pr" href="https://github.com/Nluan0" target="_blank" rel="noopener" data-en="See code on GitHub">Ver código no GitHub</a><button class="b" data-x data-en="Close">Fechar</button></div>
+</dialog>
+
+<dialog id="cf">
+<h3>Flappy Drone</h3>
+<p data-en="Case study • Extension project">Estudo de caso • Projeto de extensão</p>
+<h4 data-en="What it is">O que é</h4>
+<p data-en="A game in Java with JavaFX where a drone, the SENAI mascot, flies between server racks. Built by a team at UNI SENAI as an extension project for an NGO.">Um jogo em Java com JavaFX em que um drone, o mascote do SENAI, voa entre racks de servidores. Feito em equipe no UNI SENAI como projeto de extensão para uma ONG.</p>
+<h4 data-en="Highlights">Destaques</h4>
+<ul>
+<li data-en="Accessible mode: slower physics, wider gaps and a forgiving circular hitbox.">Modo acessível: física mais lenta, aberturas maiores e colisão tolerante, com hitbox circular.</li>
+<li data-en="Menu, play and game over screens organized as game states.">Telas de menu, jogo e fim de jogo organizadas como estados do jogo.</li>
+<li data-en="Parallax city background, sound effects and score.">Cenário da cidade com parallax, efeitos sonoros e pontuação.</li>
+<li data-en="Window scales to any monitor, with F11 fullscreen for projectors.">Janela que se adapta a qualquer monitor, com tela cheia (F11) para projetor.</li>
+<li data-en="Packaged with Maven into a single JAR that opens on Windows and Linux with a portable Java runtime.">Empacotado com Maven em um único JAR que abre no Windows e no Linux, com Java portátil.</li>
+</ul>
+<h4 data-en="What it shows">O que demonstra</h4>
+<p data-en="Java and JavaFX, code organized in classes, teamwork, and delivering software that anyone can open with two clicks.">Java e JavaFX, código organizado em classes, trabalho em equipe e entrega de um software que qualquer pessoa abre com dois cliques.</p>
 <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap"><a class="b pr" href="https://github.com/Nluan0" target="_blank" rel="noopener" data-en="See code on GitHub">Ver código no GitHub</a><button class="b" data-x data-en="Close">Fechar</button></div>
 </dialog>
 
@@ -293,9 +351,8 @@ function mu(o){nv.hidden=!o;mn.setAttribute('aria-expanded',o)}
 mn.onclick=function(){mu(nv.hidden)};
 q('#nv a').forEach(function(a){a.onclick=function(){mu(false)}});
 d.onkeydown=function(e){if(e.key=='Escape')mu(false)};
-var cs=d.getElementById('cs');
-q('[data-cs]').forEach(function(b){b.onclick=function(){cs.showModal()}});
-cs.onclick=function(e){if(e.target==cs||e.target.hasAttribute('data-x'))cs.close()};
+q('[data-cs]').forEach(function(b){b.onclick=function(){d.getElementById(b.getAttribute('data-cs')||'cs').showModal()}});
+q('dialog').forEach(function(m){m.onclick=function(e){if(e.target==m||e.target.hasAttribute('data-x'))m.close()}});
 var bg=d.querySelector('.bg'),bz=false;
 function up(){bz=false;var h=r.scrollHeight-innerHeight,y=scrollY;bg.style.setProperty('--sy',y);bg.style.setProperty('--p',h>0?(y/h).toFixed(4):0)}
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
